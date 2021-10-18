@@ -40,11 +40,13 @@ a:link{
 .cta{
     padding: 50px 0px 0px 0px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .cta-select {
     border: 2px solid #585772;
     background: transparent;
+    margin-right: 20px;
     text-decoration: none!important;
     color: #585772;
     width: 150px;
