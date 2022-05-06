@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*new*/
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+  
+  }
+
+  .portfolio{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 4rem 0px;
+  }
+  
+  .container1 .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(48, 14, 199, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+  }
+  
+  
+  body .container1 .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-image: linear-gradient(to left, #1a8dcf, #2956d4 100%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  
+  body .container1 .card .box:hover {
+    transform: translateY(-10px);
+  }
+  
+  body .container1 .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  body .container1 .card .box .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  body .container1 .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+  
+  body .container1 .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  body .container1 .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  body .container1 .card .box .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+  }
+  
+
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .project{
+        width: 44vh;
+    }
+
+.imgcontainer img {
+    margin-top: 6px;
+    width: 15vh;
+    height: 90%;
+    box-shadow: 3px 3px 3px 1px black;
+}
+.project{
+    width: 250px;
+    box-shadow: 1px 2px 7px 3px #000000;
+    margin: 0 auto;
+    animation: drop 1.5s ease;
+}
+}
+
+@media screen and (max-width: 800px) {
+    .project{
+        width: 44vh;
+    }
+
+.imgcontainer img {
+    margin-top: 6px;
+    width: 20vh;
+    height: 90%;
+    box-shadow: 3px 3px 3px 1px black;
+}
+.project{
+    width: 250px;
+    box-shadow: 1px 2px 7px 3px #000000;
+    margin: 0 auto;
+    animation: drop 1.5s ease;
+}
+}
